@@ -1,6 +1,6 @@
 /*
     jQuery Masked Input Plugin
-    Copyright (c) 2017 Maksim Degtyarev (Josh Bush fork)
+    Copyright (c) 2017 Josh Bush (https://github.com/maksimdegtyarev/jquery.maskedinput)
     Licensed under the MIT license (http://digitalbush.com/projects/masked-input-plugin/#license)
     Version: 1.4.2
 */
