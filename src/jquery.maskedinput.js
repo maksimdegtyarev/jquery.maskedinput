@@ -398,7 +398,7 @@ $.fn.extend({
 						.removeData($.mask.dataName);
 				})
 				.on("focus.mask", function() {
-                    if (input.prop("readonly")){
+                    if (input.prop("readonly") && !input.val().length){
                         return;
                     }
 

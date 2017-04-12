@@ -1,8 +1,8 @@
 /*
     jQuery Masked Input Plugin
-    Copyright (c) 2007 - 2015 Josh Bush (digitalbush.com)
+    Copyright (c) 2017 Maksim Degtyarev (Josh Bush fork)
     Licensed under the MIT license (http://digitalbush.com/projects/masked-input-plugin/#license)
-    Version: 1.4.1
+    Version: 1.4.2
 */
 !function(factory) {
     "function" == typeof define && define.amd ? define([ "jquery" ], factory) : factory("object" == typeof exports ? require("jquery") : jQuery);
@@ -162,7 +162,7 @@
                 }), input.one("unmask", function() {
                     input.off(".mask").removeData($.mask.dataName);
                 }).on("focus.mask", function() {
-                    if (!input.prop("readonly")) {
+                    if (!input.prop("readonly") && input.val().length) {
                         clearTimeout(caretTimeoutId);
                         var pos;
                         focusText = input.val(), pos = checkVal(), caretTimeoutId = setTimeout(function() {
