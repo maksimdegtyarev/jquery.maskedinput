@@ -22,7 +22,8 @@ $.mask = {
 	definitions: {
 		'9': "[0-9]",
 		'a': "[A-Za-z]",
-		'*': "[A-Za-z0-9]"
+		'*': "[A-Za-z0-9]",
+		"я": "[А-ЯЁа-яё]"
 	},
 	autoclear: true,
 	dataName: "rawMaskFn",
